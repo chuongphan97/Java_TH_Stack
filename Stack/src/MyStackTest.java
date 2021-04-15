@@ -18,7 +18,7 @@ public class MyStackTest {
 
 
         for (int i = 0; i < myStack.size; i++) {
-            System.out.println(myStack.peek(i));
+            System.out.println(myStack.elements[i]);
         }
 
 

@@ -31,8 +31,10 @@ public class MyStack<E> {
 
     public E pop(){
         if (isEmpty()) return null;
-        else
-        return this.elements[--size];
+        else {
+            
+            return this.elements[--size];
+        }
     }
 
     public int search(E e){
@@ -42,8 +44,8 @@ public class MyStack<E> {
         return -1;
     }
 
-    public E peek(int i){
-        return elements[i];
+    public E peek(){
+        return elements[size-1];
     }
 
 
