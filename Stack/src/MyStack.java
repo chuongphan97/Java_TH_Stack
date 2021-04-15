@@ -32,7 +32,7 @@ public class MyStack<E> {
     public E pop(){
         if (isEmpty()) return null;
         else {
-            
+
             return this.elements[--size];
         }
     }
@@ -45,6 +45,7 @@ public class MyStack<E> {
     }
 
     public E peek(){
+        if (isEmpty()) return null;
         return elements[size-1];
     }
 
